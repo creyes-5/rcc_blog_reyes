@@ -7,18 +7,62 @@ did it work?
 
 ![](Cane_corso_puppies.jpeg)
 
-# Project
+# Introduction
 
-## Introduction
+-   What are your questions and why are they important to you? At this stage, the questions should be fairly general (Does production quantity predict pricing? Does happiness relate to stress levels?)
 
-## Methods
+-   Predictions: Give your prediction for your question. The question is still general, but the prediction should have some specificity about direction (positive or negative relationship?) and magnitude (subtle, moderate, large). For example: *I predict that students who live on campus will report substantially more happiness than those who commute*.
 
-### Data source
+-   What is the data source you will use to help you answer your question(s?). You don’t need details yet.
 
-### Packages used
+<!-- -->
 
-### Approach
+-   Approach
 
-## Results
+    -   Data set - Give more details about the data set:
 
-## Discussion
+        -   What is the source?
+
+        -   How was the data collected?
+
+        -   What are the variables included?
+
+        -   How many records/rows/participants?
+
+        -   Any other relevant information
+
+    -   Tools
+
+        -   List the tools you are using (R and RStudio in Posit.Cloud; GitHub for website hosting; any specific packages?)
+
+    -   Approach/Predictions
+
+        -   How, specifically, will you assess your question(s)? Take your general questions and rephrase them based on the variables in your dataset (*e.g.* *I will examine the correlation between aggregated-stress scores and the subjective-well-being scale*).
+
+        -   Repeat your predictions, but with more specificity (e.g. *I predict that residents will have at least 1 point higher median score on the subjective-well being score than commuters*).
+
+-   Results
+
+    -   Code - Show the code block you are using to:
+
+        -   Retrieve/load the data
+
+        -   Conduct any clean up or transformations
+
+        -   Visualize the data
+
+    -   A key figure, well-labelled, with a clear caption, presenting the data visualization you will use to answer your research question. In most cases, you would have 1 figure per question.
+
+    -   A simple 1-sentence conclusion. Don’t refer to your prediction – just give a clear, concise, specific conclusion from what you can observe in your figure
+
+-   Discussion
+
+    -   Was your hypothesis supported, undermined, or no determination?
+
+    -   How have you updated your beliefs, and why?
+
+        -   Believe in your hypothesis more?
+
+        -   Believe in your hypothesis less?
+
+        -   No change in your belief in your hypothesis, instead a change in your belief that the way you tried to answer the question is valid.

@@ -13,12 +13,10 @@ website:
         href: https://linkedin.com/in/clara-rey-es/
   
     left:
-      - text: "Canes"
-        href: post1.qmd 
       - text: "Project"
-        href: PROJECT.qmd
+        href: https://9d3def1c6da1438199c28277db7518d2.app.posit.cloud/p/71e736fa/posts/PROJECT.html
       - text: "Test"
-        href: index.qmd
+        href: https://9d3def1c6da1438199c28277db7518d2.app.posit.cloud/p/e93b1820/posts/TEST/index.html
 format:
   html:
     theme: lumen

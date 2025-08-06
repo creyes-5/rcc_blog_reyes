@@ -229,5 +229,89 @@
     "title": "post1",
     "section": "Discussion",
     "text": "Discussion"
+  },
+  {
+    "objectID": "posts/PROJECT.html",
+    "href": "posts/PROJECT.html",
+    "title": "post1",
+    "section": "",
+    "text": "did it work?\n\n\nIntroduction\n\nWhat are your questions and why are they important to you? At this stage, the questions should be fairly general (Does production quantity predict pricing? Does happiness relate to stress levels?)\nPredictions: Give your prediction for your question. The question is still general, but the prediction should have some specificity about direction (positive or negative relationship?) and magnitude (subtle, moderate, large). For example: I predict that students who live on campus will report substantially more happiness than those who commute.\nWhat is the data source you will use to help you answer your question(s?). You don’t need details yet.\n\n\n\nApproach\n\nData set - Give more details about the data set:\n\nWhat is the source?\nHow was the data collected?\nWhat are the variables included?\nHow many records/rows/participants?\nAny other relevant information\n\nTools\n\nList the tools you are using (R and RStudio in Posit.Cloud; GitHub for website hosting; any specific packages?)\n\nApproach/Predictions\n\nHow, specifically, will you assess your question(s)? Take your general questions and rephrase them based on the variables in your dataset (e.g. I will examine the correlation between aggregated-stress scores and the subjective-well-being scale).\nRepeat your predictions, but with more specificity (e.g. I predict that residents will have at least 1 point higher median score on the subjective-well being score than commuters).\n\n\nResults\n\nCode - Show the code block you are using to:\n\nRetrieve/load the data\nConduct any clean up or transformations\nVisualize the data\n\nA key figure, well-labelled, with a clear caption, presenting the data visualization you will use to answer your research question. In most cases, you would have 1 figure per question.\nA simple 1-sentence conclusion. Don’t refer to your prediction – just give a clear, concise, specific conclusion from what you can observe in your figure\n\nDiscussion\n\nWas your hypothesis supported, undermined, or no determination?\nHow have you updated your beliefs, and why?\n\nBelieve in your hypothesis more?\nBelieve in your hypothesis less?\nNo change in your belief in your hypothesis, instead a change in your belief that the way you tried to answer the question is valid."
+  },
+  {
+    "objectID": "posts/PROJECT.html#introduction",
+    "href": "posts/PROJECT.html#introduction",
+    "title": "post1",
+    "section": "Introduction",
+    "text": "Introduction"
+  },
+  {
+    "objectID": "posts/PROJECT.html#methods",
+    "href": "posts/PROJECT.html#methods",
+    "title": "post1",
+    "section": "Methods",
+    "text": "Methods\n\nData source\n\n\nPackages used\n\n\nApproach"
+  },
+  {
+    "objectID": "posts/PROJECT.html#results",
+    "href": "posts/PROJECT.html#results",
+    "title": "post1",
+    "section": "Results",
+    "text": "Results"
+  },
+  {
+    "objectID": "posts/PROJECT.html#discussion",
+    "href": "posts/PROJECT.html#discussion",
+    "title": "post1",
+    "section": "Discussion",
+    "text": "Discussion"
+  },
+  {
+    "objectID": "posts/TEST/index.html",
+    "href": "posts/TEST/index.html",
+    "title": "My First post",
+    "section": "",
+    "text": "This is an example first post. Whatever you write here will appear inside your post.\nIt is possible to write lists:\nAnd make headers"
+  },
+  {
+    "objectID": "posts/TEST/index.html#this-is-a-second-level-heading",
+    "href": "posts/TEST/index.html#this-is-a-second-level-heading",
+    "title": "My First post",
+    "section": "This is a second level heading",
+    "text": "This is a second level heading\nYou can include images, and many other kinds of content.\nIf you are using the visual editor in Rstudio you can drag images onto the editor to insert them into the document. Otherwise, you need to place the image inside of the folder for this post, and then you can insert it to your post directly, like this:\n\nThe first image in a blog post will also be used on the listings page."
+  },
+  {
+    "objectID": "posts/CANES/post1.html",
+    "href": "posts/CANES/post1.html",
+    "title": "post1",
+    "section": "",
+    "text": "did it work?"
+  },
+  {
+    "objectID": "posts/CANES/post1.html#introduction",
+    "href": "posts/CANES/post1.html#introduction",
+    "title": "post1",
+    "section": "Introduction",
+    "text": "Introduction"
+  },
+  {
+    "objectID": "posts/CANES/post1.html#methods",
+    "href": "posts/CANES/post1.html#methods",
+    "title": "post1",
+    "section": "Methods",
+    "text": "Methods\n\nData source\n\n\nPackages used\n\n\nApproach"
+  },
+  {
+    "objectID": "posts/CANES/post1.html#results",
+    "href": "posts/CANES/post1.html#results",
+    "title": "post1",
+    "section": "Results",
+    "text": "Results"
+  },
+  {
+    "objectID": "posts/CANES/post1.html#discussion",
+    "href": "posts/CANES/post1.html#discussion",
+    "title": "post1",
+    "section": "Discussion",
+    "text": "Discussion"
   }
 ]

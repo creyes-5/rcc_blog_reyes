@@ -100,16 +100,16 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "quartoCourseBlog",
+    "title": "The R Project",
     "section": "",
-    "text": "I’m awesome! I love music\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMy First post\n\n\n\ngoals\n\ngeneral\n\n\n\n\n\n\n\n\n\nOct 21, 2022\n\n\nMatt Crump\n\n\n\n\n\n\n\n\n\n\n\n\nExample assignment\n\n\n\ngoals\n\ngeneral\n\n\n\n\n\n\n\n\n\nOct 21, 2022\n\n\nMatt Crump\n\n\n\n\n\nNo matching items"
+    "text": "Welcome to my website!\nI created this website as part of a course at Dominican University. It was created using R and Quarto in RStudio. Shout out to Dr. Bob!!\nThis is the directory page feel free to look around…"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About me!",
     "section": "",
-    "text": "Hello! I’m an undergraduate at Dominican University, River Forest. I’m majoring in Mathematics and Mechanical Engineering. I look forward toward connecting with you!"
+    "text": "Hello! I’m an undergraduate at Dominican University. I’m majoring in Mathematics and Mechanical Engineering. I look forward toward connecting with you!"
   },
   {
     "objectID": "about.html#education",
@@ -123,7 +123,7 @@
     "href": "about.html#experience",
     "title": "About me!",
     "section": "Experience:",
-    "text": "Experience:\nLowe’s Inc. || Customer Service Associate || December 2024 - Present\nRuckus Entrepreneurs || Student Intern || June 2024 - October 2024"
+    "text": "Experience:\nLowe’s Inc. || Customer Service Associate || December 2024 - Present\nRuckus Entrepreneurs || Student Intern || June 2024 - October 2024\n\n2+2\n\n[1] 4\n\nlibrary(ggplot2)\nggplot(mpg, aes(x = hwy, y = cyl)) + geom_point()"
   },
   {
     "objectID": "posts/Example_assignment/index.html",
@@ -166,5 +166,68 @@
     "title": "About me!",
     "section": "Discussion",
     "text": "Discussion\n\n2+2\n\n[1] 4\n\nlibrary(ggplot2)\nggplot(mpg, aes(x = hwy, y = cyl)) + geom_point()"
+  },
+  {
+    "objectID": "index.html#introduction",
+    "href": "index.html#introduction",
+    "title": "The R Project",
+    "section": "Introduction",
+    "text": "Introduction"
+  },
+  {
+    "objectID": "index.html#methods",
+    "href": "index.html#methods",
+    "title": "The R Project",
+    "section": "Methods",
+    "text": "Methods\n\nData source\n\n\nPackages used\n\n\nApproach"
+  },
+  {
+    "objectID": "index.html#results",
+    "href": "index.html#results",
+    "title": "The R Project",
+    "section": "Results",
+    "text": "Results"
+  },
+  {
+    "objectID": "index.html#discussion",
+    "href": "index.html#discussion",
+    "title": "The R Project",
+    "section": "Discussion",
+    "text": "Discussion"
+  },
+  {
+    "objectID": "posts/post1.html",
+    "href": "posts/post1.html",
+    "title": "post1",
+    "section": "",
+    "text": "did it work?"
+  },
+  {
+    "objectID": "posts/post1.html#introduction",
+    "href": "posts/post1.html#introduction",
+    "title": "post1",
+    "section": "Introduction",
+    "text": "Introduction"
+  },
+  {
+    "objectID": "posts/post1.html#methods",
+    "href": "posts/post1.html#methods",
+    "title": "post1",
+    "section": "Methods",
+    "text": "Methods\n\nData source\n\n\nPackages used\n\n\nApproach"
+  },
+  {
+    "objectID": "posts/post1.html#results",
+    "href": "posts/post1.html#results",
+    "title": "post1",
+    "section": "Results",
+    "text": "Results"
+  },
+  {
+    "objectID": "posts/post1.html#discussion",
+    "href": "posts/post1.html#discussion",
+    "title": "post1",
+    "section": "Discussion",
+    "text": "Discussion"
   }
 ]

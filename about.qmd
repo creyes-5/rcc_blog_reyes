@@ -2,7 +2,7 @@
 title: "About me!"
 image: profile.jpg
 about:
-  template: trestles
+  template: solana
   links:
     - icon: linkedin
       text: LinkedIn
@@ -12,7 +12,7 @@ about:
       href: https://github.com
 ---
 
-Hello! I'm an undergraduate at Dominican University, River Forest. I'm majoring in Mathematics and Mechanical Engineering. I look forward toward connecting with you!
+Hello! I'm an undergraduate at Dominican University. I'm majoring in Mathematics and Mechanical Engineering. I look forward toward connecting with you!
 
 ## Education:
 
@@ -25,22 +25,6 @@ Hello! I'm an undergraduate at Dominican University, River Forest. I'm majoring 
 Lowe's Inc. \|\| Customer Service Associate \|\| December 2024 - Present
 
 Ruckus Entrepreneurs \|\| Student Intern \|\| June 2024 - October 2024
-
-# Project
-
-## Introduction
-
-## Methods
-
-### Data source
-
-### Packages used
-
-### Approach 
-
-## Results
-
-## Discussion
 
 ```{r}
 

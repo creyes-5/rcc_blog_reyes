@@ -1,15 +1,12 @@
 ---
-title: "quartoCourseBlog"
-listing:
-  contents: posts
-  sort: "date desc"
-  type: default
-  image-placeholder: "images/logo.png"
-  categories: true
-  sort-ui: false
-  filter-ui: false
-page-layout: full
-title-block-banner: true
+title: "The R Project"
+author: "Clara Reyes"
+date: "2025-08-06 "
+categories: [data_science, data_projects, puppies]
 ---
 
-I'm awesome! I love music
+Welcome to my website!
+
+I created this website as part of a course at Dominican University. It was created using R and Quarto in RStudio. Shout out to Dr. Bob!!
+
+This is the directory page feel free to look around...

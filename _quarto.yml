@@ -9,8 +9,16 @@ website:
       - about.qmd
       - icon: github
         href: https://github.com/creyes-5/rcc_blog_reyes
-      - icon: twitter
-        href: https://twitter.com/MattCrumpLab
+      - icon: linkedin
+        href: https://linkedin.com/in/clara-rey-es/
+  
+    left:
+      - text: "Canes"
+        href: post1.qmd 
+      - text: "Project"
+        href: PROJECT.qmd
+      - text: "Test"
+        href: index.qmd
 format:
   html:
     theme: lumen

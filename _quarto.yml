@@ -3,17 +3,17 @@ project:
   output-dir: docs
 
 website:
-  title: "quartoCourseBlog"
+  title: "Clara's R Portfolio"
   navbar:
     right:
       - about.qmd
       - icon: github
-        href: https://github.com/CrumpLab/quartoCourseBlog
+        href: https://github.com/creyes-5/rcc_blog_reyes
       - icon: twitter
         href: https://twitter.com/MattCrumpLab
 format:
   html:
-    theme: minty
+    theme: lumen
     css: styles.css
 
 editor: visual

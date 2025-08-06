@@ -16,14 +16,14 @@ Hello! I'm an undergraduate at Dominican University, River Forest. I'm majoring 
 
 "About" pages are special quarto template pages, with multiple options: <https://quarto.org/docs/websites/website-about.html>.
 
-Education:
+## Education:
 
-dominican university
+**Dominican University** \|\| River Forest, Illinois \|\| Class of 2028
 
-illinois tech
+**Illinois Institute of Technology** \|\| Chicago, Illinois \|\| Class of 2028
 
-Experience:
+## Experience:
 
-lowe's
+Lowe's Inc. \|\| Customer Service Associate \|\| December 2024 - Present
 
-ruckus
+Ruckus Entrepreneurs \|\| Student Intern \|\| June 2024 - October 2024

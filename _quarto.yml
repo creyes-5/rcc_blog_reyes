@@ -11,12 +11,7 @@ website:
         href: https://github.com/creyes-5/rcc_blog_reyes
       - icon: linkedin
         href: https://linkedin.com/in/clara-rey-es/
-  
-    left:
-      - text: "Project"
-        href: https://9d3def1c6da1438199c28277db7518d2.app.posit.cloud/p/71e736fa/posts/PROJECT.html
-      - text: "Test"
-        href: https://9d3def1c6da1438199c28277db7518d2.app.posit.cloud/p/e93b1820/posts/TEST/index.html
+
 format:
   html:
     theme: lumen

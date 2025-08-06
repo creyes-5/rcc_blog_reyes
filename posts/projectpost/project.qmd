@@ -1,17 +1,25 @@
 ---
-title: "post1"
+title: "Data Science in R Project"
 format: html
 ---
 
-did it work?
-
-![](Cane_corso_puppies.jpeg)
+![](agri.png)
 
 # Introduction
 
+data set: <https://www.kaggle.com/datasets/alessandrolobello/agri-food-co2-emission-dataset-forecasting-ml>
+
 -   What are your questions and why are they important to you? At this stage, the questions should be fairly general (Does production quantity predict pricing? Does happiness relate to stress levels?)
 
+    "do the added on 'ingredients', such as pesticides, industrial processes, packaging and food retail, contribute significantly to co2 emissions
+
+    does the production of co2 pesticides contribute overall to the contribution of co2 in the environment
+
+    these questions are important to me because i have always been interested in our food processes and consumption habits. How is it many people are actively and unknowingly throwing away their food and it has become a comodity while other poeple are barely able to find a decent meal to live off of.
+
 -   Predictions: Give your prediction for your question. The question is still general, but the prediction should have some specificity about direction (positive or negative relationship?) and magnitude (subtle, moderate, large). For example: *I predict that students who live on campus will report substantially more happiness than those who commute*.
+
+-   I predit that these "added on" processes do significantly add to the co2 emissions. think about washing pacakging, making the packaging, and disposal of "unfit food"
 
 -   What is the data source you will use to help you answer your question(s?). You don’t need details yet.
 
@@ -23,17 +31,27 @@ did it work?
 
         -   What is the source?
 
+            the source is from the food and agriculture organization (FAO), and the intergovernmental panel on climate change (IPCC)
+
         -   How was the data collected?
+
+            the data was collected from a dozen individual data sets from the FAO and IPCC.
 
         -   What are the variables included?
 
-        -   How many records/rows/participants?
+            savanna fires, forest fires, crop residues, rice cultivation, drained organic soils ( co2), pesticides manufacturing, food transport, forestland, net forest conversion, food household consumption, food retail, on-farm electricity use, food packaging, agrifood systems waste disposal, food processing, fertilizers manufacturing, ippu (Emissions from industrial processes and product use), manure applied to soils, manure management, fires in organic soils, fires in humid tropical forests, on-farm energy use, rural population, total population, total population - male, total population - female.
+
+        -   how many records/rows/participants?
+
+            236 unique geografical area.
 
         -   Any other relevant information
 
     -   Tools
 
-        -   List the tools you are using (R and RStudio in Posit.Cloud; GitHub for website hosting; any specific packages?)
+        -   R and RStudio in Posit.Cloud
+
+        -   GitHub
 
     -   Approach/Predictions
 
@@ -66,3 +84,19 @@ did it work?
         -   Believe in your hypothesis less?
 
         -   No change in your belief in your hypothesis, instead a change in your belief that the way you tried to answer the question is valid.
+
+# Project
+
+## Introduction
+
+## Methods
+
+### Data source
+
+### Packages used
+
+### Approach
+
+## Results
+
+## Discussion

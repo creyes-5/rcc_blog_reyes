@@ -1,6 +1,6 @@
 ---
 title: "About me!"
-image: profile.jpg
+image: Cane_corso_puppies.jpg
 about:
   template: solana
   links:
@@ -22,13 +22,6 @@ Hello! I'm an undergraduate at Dominican University. I'm majoring in Mathematics
 
 ## Experience:
 
-Lowe's Inc. \|\| Customer Service Associate \|\| December 2024 - Present
+**Lowe's Inc.** \|\| Customer Service Associate \|\| December 2024 - Present
 
-Ruckus Entrepreneurs \|\| Student Intern \|\| June 2024 - October 2024
-
-```{r}
-
-2+2
-library(ggplot2)
-ggplot(mpg, aes(x = hwy, y = cyl)) + geom_point()
-```
+**Ruckus Entrepreneurs** \|\| Student Intern \|\| June 2024 - October 2024

@@ -84,25 +84,46 @@
     "text": "See this growing list of quarto resources for much, much more:\nhttps://github.com/mcanouil/awesome-quarto"
   },
   {
-    "objectID": "posts/my_first_post/index.html",
-    "href": "posts/my_first_post/index.html",
-    "title": "My First post",
+    "objectID": "posts/projectpost/project.html",
+    "href": "posts/projectpost/project.html",
+    "title": "Data Science in R Project",
     "section": "",
-    "text": "This is an example first post. Whatever you write here will appear inside your post.\nIt is possible to write lists:\nAnd make headers"
+    "text": "did it work?"
   },
   {
-    "objectID": "posts/my_first_post/index.html#this-is-a-second-level-heading",
-    "href": "posts/my_first_post/index.html#this-is-a-second-level-heading",
-    "title": "My First post",
-    "section": "This is a second level heading",
-    "text": "This is a second level heading\nYou can include images, and many other kinds of content.\nIf you are using the visual editor in Rstudio you can drag images onto the editor to insert them into the document. Otherwise, you need to place the image inside of the folder for this post, and then you can insert it to your post directly, like this:\n\nThe first image in a blog post will also be used on the listings page."
+    "objectID": "posts/projectpost/project.html#introduction-1",
+    "href": "posts/projectpost/project.html#introduction-1",
+    "title": "Data Science in R Project",
+    "section": "Introduction",
+    "text": "Introduction"
+  },
+  {
+    "objectID": "posts/projectpost/project.html#methods",
+    "href": "posts/projectpost/project.html#methods",
+    "title": "Data Science in R Project",
+    "section": "Methods",
+    "text": "Methods\n\nData source\n\n\nPackages used\n\n\nApproach"
+  },
+  {
+    "objectID": "posts/projectpost/project.html#results",
+    "href": "posts/projectpost/project.html#results",
+    "title": "Data Science in R Project",
+    "section": "Results",
+    "text": "Results"
+  },
+  {
+    "objectID": "posts/projectpost/project.html#discussion",
+    "href": "posts/projectpost/project.html#discussion",
+    "title": "Data Science in R Project",
+    "section": "Discussion",
+    "text": "Discussion"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "The R Project",
     "section": "",
-    "text": "Welcome to my website!\nI created this website as part of a course at Dominican University. It was created using R and Quarto in RStudio. Shout out to Dr. Bob!!\nThis is the directory page feel free to look around…"
+    "text": "Welcome to my website!\nI created this website as part of a course at Dominican University. It was created using R and Quarto in RStudio.\nThis is the directory page feel free to look around…"
   },
   {
     "objectID": "about.html",
@@ -123,195 +144,13 @@
     "href": "about.html#experience",
     "title": "About me!",
     "section": "Experience:",
-    "text": "Experience:\nLowe’s Inc. || Customer Service Associate || December 2024 - Present\nRuckus Entrepreneurs || Student Intern || June 2024 - October 2024\n\n2+2\n\n[1] 4\n\nlibrary(ggplot2)\nggplot(mpg, aes(x = hwy, y = cyl)) + geom_point()"
+    "text": "Experience:\nLowe’s Inc. || Customer Service Associate || December 2024 - Present\nRuckus Entrepreneurs || Student Intern || June 2024 - October 2024"
   },
   {
-    "objectID": "posts/Example_assignment/index.html",
-    "href": "posts/Example_assignment/index.html",
-    "title": "Example assignment",
-    "section": "",
-    "text": "This assignment engages you in the process of introspection. Your task is to use introspection to evaluate and describe your own mental imagery abilities. Attempt to answer the following kinds of questions. What is your mental imagery like? Do you have mental imagery for different kinds of senses? Is your mental imagery vivid and life-like or very different from normal perception? How would you describe your mental imagery?\nYou should write a minimum of 250 words, but feel free to write more. Submit your document on blackboard by the due date."
-  },
-  {
-    "objectID": "posts/Example_assignment/index.html#my-mental-imagery",
-    "href": "posts/Example_assignment/index.html#my-mental-imagery",
-    "title": "Example assignment",
-    "section": "My mental imagery",
-    "text": "My mental imagery\nMy mental imagery is like…"
-  },
-  {
-    "objectID": "about.html#introduction",
-    "href": "about.html#introduction",
-    "title": "About me!",
-    "section": "Introduction",
-    "text": "Introduction"
-  },
-  {
-    "objectID": "about.html#methods",
-    "href": "about.html#methods",
-    "title": "About me!",
-    "section": "Methods",
-    "text": "Methods\n\nData source\n\n\nPackages used\n\n\nApproach"
-  },
-  {
-    "objectID": "about.html#results",
-    "href": "about.html#results",
-    "title": "About me!",
-    "section": "Results",
-    "text": "Results"
-  },
-  {
-    "objectID": "about.html#discussion",
-    "href": "about.html#discussion",
-    "title": "About me!",
-    "section": "Discussion",
-    "text": "Discussion\n\n2+2\n\n[1] 4\n\nlibrary(ggplot2)\nggplot(mpg, aes(x = hwy, y = cyl)) + geom_point()"
-  },
-  {
-    "objectID": "index.html#introduction",
-    "href": "index.html#introduction",
-    "title": "The R Project",
-    "section": "Introduction",
-    "text": "Introduction"
-  },
-  {
-    "objectID": "index.html#methods",
-    "href": "index.html#methods",
-    "title": "The R Project",
-    "section": "Methods",
-    "text": "Methods\n\nData source\n\n\nPackages used\n\n\nApproach"
-  },
-  {
-    "objectID": "index.html#results",
-    "href": "index.html#results",
-    "title": "The R Project",
-    "section": "Results",
-    "text": "Results"
-  },
-  {
-    "objectID": "index.html#discussion",
-    "href": "index.html#discussion",
-    "title": "The R Project",
-    "section": "Discussion",
-    "text": "Discussion"
-  },
-  {
-    "objectID": "posts/post1.html",
-    "href": "posts/post1.html",
+    "objectID": "posts/CANES/canes.html",
+    "href": "posts/CANES/canes.html",
     "title": "post1",
     "section": "",
     "text": "did it work?"
-  },
-  {
-    "objectID": "posts/post1.html#introduction",
-    "href": "posts/post1.html#introduction",
-    "title": "post1",
-    "section": "Introduction",
-    "text": "Introduction"
-  },
-  {
-    "objectID": "posts/post1.html#methods",
-    "href": "posts/post1.html#methods",
-    "title": "post1",
-    "section": "Methods",
-    "text": "Methods\n\nData source\n\n\nPackages used\n\n\nApproach"
-  },
-  {
-    "objectID": "posts/post1.html#results",
-    "href": "posts/post1.html#results",
-    "title": "post1",
-    "section": "Results",
-    "text": "Results"
-  },
-  {
-    "objectID": "posts/post1.html#discussion",
-    "href": "posts/post1.html#discussion",
-    "title": "post1",
-    "section": "Discussion",
-    "text": "Discussion"
-  },
-  {
-    "objectID": "posts/PROJECT.html",
-    "href": "posts/PROJECT.html",
-    "title": "post1",
-    "section": "",
-    "text": "did it work?\n\n\nIntroduction\n\nWhat are your questions and why are they important to you? At this stage, the questions should be fairly general (Does production quantity predict pricing? Does happiness relate to stress levels?)\nPredictions: Give your prediction for your question. The question is still general, but the prediction should have some specificity about direction (positive or negative relationship?) and magnitude (subtle, moderate, large). For example: I predict that students who live on campus will report substantially more happiness than those who commute.\nWhat is the data source you will use to help you answer your question(s?). You don’t need details yet.\n\n\n\nApproach\n\nData set - Give more details about the data set:\n\nWhat is the source?\nHow was the data collected?\nWhat are the variables included?\nHow many records/rows/participants?\nAny other relevant information\n\nTools\n\nList the tools you are using (R and RStudio in Posit.Cloud; GitHub for website hosting; any specific packages?)\n\nApproach/Predictions\n\nHow, specifically, will you assess your question(s)? Take your general questions and rephrase them based on the variables in your dataset (e.g. I will examine the correlation between aggregated-stress scores and the subjective-well-being scale).\nRepeat your predictions, but with more specificity (e.g. I predict that residents will have at least 1 point higher median score on the subjective-well being score than commuters).\n\n\nResults\n\nCode - Show the code block you are using to:\n\nRetrieve/load the data\nConduct any clean up or transformations\nVisualize the data\n\nA key figure, well-labelled, with a clear caption, presenting the data visualization you will use to answer your research question. In most cases, you would have 1 figure per question.\nA simple 1-sentence conclusion. Don’t refer to your prediction – just give a clear, concise, specific conclusion from what you can observe in your figure\n\nDiscussion\n\nWas your hypothesis supported, undermined, or no determination?\nHow have you updated your beliefs, and why?\n\nBelieve in your hypothesis more?\nBelieve in your hypothesis less?\nNo change in your belief in your hypothesis, instead a change in your belief that the way you tried to answer the question is valid."
-  },
-  {
-    "objectID": "posts/PROJECT.html#introduction",
-    "href": "posts/PROJECT.html#introduction",
-    "title": "post1",
-    "section": "Introduction",
-    "text": "Introduction"
-  },
-  {
-    "objectID": "posts/PROJECT.html#methods",
-    "href": "posts/PROJECT.html#methods",
-    "title": "post1",
-    "section": "Methods",
-    "text": "Methods\n\nData source\n\n\nPackages used\n\n\nApproach"
-  },
-  {
-    "objectID": "posts/PROJECT.html#results",
-    "href": "posts/PROJECT.html#results",
-    "title": "post1",
-    "section": "Results",
-    "text": "Results"
-  },
-  {
-    "objectID": "posts/PROJECT.html#discussion",
-    "href": "posts/PROJECT.html#discussion",
-    "title": "post1",
-    "section": "Discussion",
-    "text": "Discussion"
-  },
-  {
-    "objectID": "posts/TEST/index.html",
-    "href": "posts/TEST/index.html",
-    "title": "My First post",
-    "section": "",
-    "text": "This is an example first post. Whatever you write here will appear inside your post.\nIt is possible to write lists:\nAnd make headers"
-  },
-  {
-    "objectID": "posts/TEST/index.html#this-is-a-second-level-heading",
-    "href": "posts/TEST/index.html#this-is-a-second-level-heading",
-    "title": "My First post",
-    "section": "This is a second level heading",
-    "text": "This is a second level heading\nYou can include images, and many other kinds of content.\nIf you are using the visual editor in Rstudio you can drag images onto the editor to insert them into the document. Otherwise, you need to place the image inside of the folder for this post, and then you can insert it to your post directly, like this:\n\nThe first image in a blog post will also be used on the listings page."
-  },
-  {
-    "objectID": "posts/CANES/post1.html",
-    "href": "posts/CANES/post1.html",
-    "title": "post1",
-    "section": "",
-    "text": "did it work?"
-  },
-  {
-    "objectID": "posts/CANES/post1.html#introduction",
-    "href": "posts/CANES/post1.html#introduction",
-    "title": "post1",
-    "section": "Introduction",
-    "text": "Introduction"
-  },
-  {
-    "objectID": "posts/CANES/post1.html#methods",
-    "href": "posts/CANES/post1.html#methods",
-    "title": "post1",
-    "section": "Methods",
-    "text": "Methods\n\nData source\n\n\nPackages used\n\n\nApproach"
-  },
-  {
-    "objectID": "posts/CANES/post1.html#results",
-    "href": "posts/CANES/post1.html#results",
-    "title": "post1",
-    "section": "Results",
-    "text": "Results"
-  },
-  {
-    "objectID": "posts/CANES/post1.html#discussion",
-    "href": "posts/CANES/post1.html#discussion",
-    "title": "post1",
-    "section": "Discussion",
-    "text": "Discussion"
   }
 ]

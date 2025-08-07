@@ -1,31 +1,37 @@
 ---
-title: "Data Science in R Project"
+title: "CO2 Emissions in Agriculture"
+author: "Clara Reyes"
+date: "2025-08-07"
 format: html
 ---
 
-![](agri.png)
+![Farm worker working a harvest on a tractor.](agri.png)
 
 # Introduction
 
-data set: <https://www.kaggle.com/datasets/alessandrolobello/agri-food-co2-emission-dataset-forecasting-ml>
+This is an investigation into the CO~2~ emissions that agriculture produces in various regions of the world. The investigation focuses on the CO~2~ emissions from pesticides, packaging, retail, transportation, industrial processes and product use. The question this investigation is trying to answer is: Do the added on 'ingredients', such as pesticides, industrial processes, packaging and food retail including transportation, contribute significantly to CO~2~ emissions?
 
--   What are your questions and why are they important to you? At this stage, the questions should be fairly general (Does production quantity predict pricing? Does happiness relate to stress levels?)
+This question is important to me to answer because I have a strong interest in our food processes and consumption habits. Much of the produce and food processed and not sold at retail stores are thrown away. Impurities and imperfections on produce can deem them unfit for the retail market, and then they are disposed of. We must acknowledge the processes that is being used to processes and grow these food and the emissions that is being developed by them. In a capitalist society, disposal of fresh
 
-    "do the added on 'ingredients', such as pesticides, industrial processes, packaging and food retail, contribute significantly to co2 emissions
-
-    does the production of co2 pesticides contribute overall to the contribution of co2 in the environment
+-   does the production of co2 pesticides contribute overall to the contribution of co2 in the environment
 
     these questions are important to me because i have always been interested in our food processes and consumption habits. How is it many people are actively and unknowingly throwing away their food and it has become a comodity while other poeple are barely able to find a decent meal to live off of.
 
 -   Predictions: Give your prediction for your question. The question is still general, but the prediction should have some specificity about direction (positive or negative relationship?) and magnitude (subtle, moderate, large). For example: *I predict that students who live on campus will report substantially more happiness than those who commute*.
 
--   I predit that these "added on" processes do significantly add to the co2 emissions. think about washing pacakging, making the packaging, and disposal of "unfit food"
+    I predit that these "added on" processes do significantly add to the co2 emissions. think about washing pacakging, making the packaging, and disposal of "unfit food"
 
 -   What is the data source you will use to help you answer your question(s?). You don’t need details yet.
 
-<!-- -->
+    data set: <https://www.kaggle.com/datasets/alessandrolobello/agri-food-co2-emission-dataset-forecasting-ml>
 
--   Approach
+    # Methods
+
+    ### Data source
+
+    ### Packages used
+
+    ### Approach
 
     -   Data set - Give more details about the data set:
 
@@ -47,19 +53,25 @@ data set: <https://www.kaggle.com/datasets/alessandrolobello/agri-food-co2-emiss
 
         -   Any other relevant information
 
+            -   DATA IS RECORDED IN KILOTONES (kt) 1 kt = 1000 kg
+
     -   Tools
 
         -   R and RStudio in Posit.Cloud
 
         -   GitHub
 
-    -   Approach/Predictions
+        # Predictions
 
         -   How, specifically, will you assess your question(s)? Take your general questions and rephrase them based on the variables in your dataset (*e.g.* *I will examine the correlation between aggregated-stress scores and the subjective-well-being scale*).
 
+            I will examine the correlation between co2 emissions and the emission contributions from three factors, pesticides, industrial processes, packaging and food retail
+
         -   Repeat your predictions, but with more specificity (e.g. *I predict that residents will have at least 1 point higher median score on the subjective-well being score than commuters*).
 
--   Results
+        -   I predict that packaging and food retail will have more co2 emissions than, pesticides
+
+    # Results
 
     -   Code - Show the code block you are using to:
 
@@ -73,30 +85,76 @@ data set: <https://www.kaggle.com/datasets/alessandrolobello/agri-food-co2-emiss
 
     -   A simple 1-sentence conclusion. Don’t refer to your prediction – just give a clear, concise, specific conclusion from what you can observe in your figure
 
--   Discussion
+    1\) As food was processed in some areas, the total emission were most likely to increase as well
+
+    2\) There is a slight positive correlation between the manufactured pesticides used on the farms and the total co2 emissions it contirbutes to
+
+    3\) there is a strong positive correlation between the industrial processes and product use emissions and the total emissions that a region develops.
+
+    # Discussion
 
     -   Was your hypothesis supported, undermined, or no determination?
 
-    -   How have you updated your beliefs, and why?
+        -   my hypothesis was supported (1), food processing emissions do contribute strongly and somewhat significantly to a region's total co2 emissions
 
-        -   Believe in your hypothesis more?
+            my hypothesis was undermined , a bit,(2), pesticides do not contribute strongly to the co2 emissions that a region contributes total, it still contributes somewhat to the total emissions, but there is many regions that hardly use pesticides and their contribution is close to none, there are also some regions that pesticides contribute
 
-        -   Believe in your hypothesis less?
+            my hypothesis was supported (3), industrial processes and product use emissions contribute strongly to the co2 emissions that a region contributes total
 
-        -   No change in your belief in your hypothesis, instead a change in your belief that the way you tried to answer the question is valid.
+        -   How have you updated your beliefs, and why?
 
-# Project
+            -   Believe in your hypothesis more?
 
-## Introduction
+            -   Believe in your hypothesis less?
 
-## Methods
+            -   No change in your belief in your hypothesis, instead a change in your belief that the way you tried to answer the question is valid
 
-### Data source
+```{r}
+#| label: libraries
+library(ggplot2)
+library(tidyverse)
 
-### Packages used
+```
 
-### Approach
+```{r}
+#| label: Choosing the Data
 
-## Results
+foodAgro <- read.csv("Agrofood_co2_emission.csv")
 
-## Discussion
+foodAgro2 <- foodAgro |>
+  group_by(Area) |> 
+  summarise(Year, 
+      Area,
+      total_emission, 
+      Pesticides.Manufacturing, 
+      IPPU, Food.Transport, 
+      Food.Retail, 
+      Food.Processing, 
+      Food.Packaging) |>
+  mutate(food.ready.emissions = 
+          Food.Transport 
+        + Food.Retail
+        + Food.Packaging 
+        + Food.Processing)
+
+foodAgro2$decade <- "1990s"
+foodAgro2[foodAgro2$Year > 1999, ]$decade <- "2000s"
+foodAgro2[foodAgro2$Year > 2009, ]$decade <- "2010s"
+foodAgro2[foodAgro2$Year > 2019, ]$decade <- "2020s"
+
+{
+  color in mapping or in points, bob leaning to point, keep all data, do not reduce, see the relationship it builds
+}
+
+
+#food ready emiss v total emiss
+ggplot(data = foodAgro2, mapping = aes(x = food.ready.emissions, y = total_emission)) + geom_point(alpha = .5) + labs(title = "Food Processing and Transportation Emissions by Decades", x = "Food Processing Emissions (kt)", y = "Total Emissions (kt)") + geom_smooth(se = FALSE)
+
+#pests v total emiss
+ggplot(data = foodAgro2, mapping = aes(x = Pesticides.Manufacturing, y = total_emission)) + geom_point(alpha = .5) + labs(title = "Pesticides Manufacturing Emissions by Decades", x = "Pesticides Manufacturing Emissions (kt)", y = "Total Emissions (kt)") + geom_smooth(se = FALSE)
+
+# ippu (Emissions from industrial processes and product use) v total emiss
+ggplot(data = foodAgro2, mapping = aes(x = IPPU, y = total_emission)) + geom_point(alpha = .5) +labs(title = "Industrial Processes and Product Use Emissions by Decades", x = "Industrial Processes and Product Use Emissions (kt)", y = "Total Emissions (kt)") + geom_smooth(se = FALSE)
+
+
+```

@@ -13,11 +13,11 @@ This is the directory page feel free to look around...
 
 ---
 title: "The R Project"
-listings: 
+listing: 
   contents: posts
   type: default
   image-placeholder: "Cane_corso_puppies.jpeg"
-  categories: true
+  categories: false
   sort-ui: false
   filter-ui: false
 page-layout: full

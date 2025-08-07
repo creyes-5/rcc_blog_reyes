@@ -1,8 +1,10 @@
 ---
-title: "post1"
+title: "Canes"
 format: html
 ---
 
 did it work?
 
-![](canes.qmd)
+![](Cane_corso_puppies.jpeg)
+
+yes it did!

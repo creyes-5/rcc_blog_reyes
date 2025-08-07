@@ -86,35 +86,35 @@
   {
     "objectID": "posts/projectpost/project.html",
     "href": "posts/projectpost/project.html",
-    "title": "Data Science in R Project",
+    "title": "CO2 Emissions in Agriculture",
     "section": "",
-    "text": "did it work?"
+    "text": "Farm worker working a harvest on a tractor."
   },
   {
     "objectID": "posts/projectpost/project.html#introduction-1",
     "href": "posts/projectpost/project.html#introduction-1",
-    "title": "Data Science in R Project",
+    "title": "CO2 Emissions in Agriculture",
     "section": "Introduction",
     "text": "Introduction"
   },
   {
     "objectID": "posts/projectpost/project.html#methods",
     "href": "posts/projectpost/project.html#methods",
-    "title": "Data Science in R Project",
+    "title": "CO2 Emissions in Agriculture",
     "section": "Methods",
     "text": "Methods\n\nData source\n\n\nPackages used\n\n\nApproach"
   },
   {
     "objectID": "posts/projectpost/project.html#results",
     "href": "posts/projectpost/project.html#results",
-    "title": "Data Science in R Project",
+    "title": "CO2 Emissions in Agriculture",
     "section": "Results",
     "text": "Results"
   },
   {
     "objectID": "posts/projectpost/project.html#discussion",
     "href": "posts/projectpost/project.html#discussion",
-    "title": "Data Science in R Project",
+    "title": "CO2 Emissions in Agriculture",
     "section": "Discussion",
     "text": "Discussion"
   },
@@ -123,7 +123,7 @@
     "href": "index.html",
     "title": "The R Project",
     "section": "",
-    "text": "Welcome to my website!\nI created this website as part of a course at Dominican University. It was created using R and Quarto in RStudio.\nThis is the directory page feel free to look around…"
+    "text": "Welcome to my website!\nI created this website as part of a course at Dominican University. It was created using R and Quarto in RStudio.\nThis is the directory page feel free to look around…\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCO2 Emissions in Agriculture\n\n\n\n\n\n\n\n\nAug 7, 2025\n\n\nClara Reyes\n\n\n\n\n\n\n\n\n\n\n\n\nCanes\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -149,8 +149,8 @@
   {
     "objectID": "posts/CANES/canes.html",
     "href": "posts/CANES/canes.html",
-    "title": "post1",
+    "title": "Canes",
     "section": "",
-    "text": "did it work?"
+    "text": "did it work?\n\nyes it did!"
   }
 ]

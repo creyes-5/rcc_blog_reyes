@@ -203,9 +203,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h1>Methods</h1>
 <section id="data-source" class="level3">
 <h3 class="anchored" data-anchor-id="data-source">Data source</h3>
-<p>My data source is from Kaggle.com, “Agri-food CO2 emission dataset - Forecasting ML” by Alessandro Lo Bello.</p>
+<p>My data source is from Kaggle.com, “Agri-food CO<sub>2</sub> emission dataset - Forecasting ML” by Alessandro Lo Bello.</p>
 <ul>
-<li>data set: <a href="https://www.kaggle.com/datasets/alessandrolobello/agri-food-co2-emission-dataset-forecasting-ml" class="uri">https://www.kaggle.com/datasets/alessandrolobello/agri-food-co2-emission-dataset-forecasting-ml</a></li>
+<li><p>data set:</p>
+<p><a href="https://www.kaggle.com/datasets/alessandrolobello/agri-food-co2-emission-dataset-forecasting-ml" class="uri">https://www.kaggle.com/datasets/alessandrolobello/agri-food-co2-emission-dataset-forecasting-ml</a></p></li>
 </ul>
 </section>
 <section id="packages-used" class="level3">
@@ -237,79 +238,55 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>How was the data collected?</p>
 <p>The data was collected from a dozen individual data sets from the FAO and IPCC. They were cleaned, preprocessed, and merged together to create a “comprehensive and cohesive” data set (Bello, 2023).</p></li>
 <li><p>What are the variables included?</p>
-<p>savanna fires, forest fires, crop residues, rice cultivation, drained organic soils ( co2), pesticides manufacturing, food transport, forestland, net forest conversion, food household consumption, food retail, on-farm electricity use, food packaging, agrifood systems waste disposal, food processing, fertilizers manufacturing, ippu (Emissions from industrial processes and product use), manure applied to soils, manure management, fires in organic soils, fires in humid tropical forests, on-farm energy use, rural population, total population, total population - male, total population - female.</p></li>
-<li><p>how many records/rows/participants?</p>
-<p>236 unique geographical areaa.</p></li>
+<p>The variables included are: savanna fires, forest fires, crop residues, rice cultivation, drained organic soils (CO<sub>2</sub>), pesticides manufacturing, food transport, forestland, net forest conversion, food household consumption, food retail, on-farm electricity use, food packaging, agrifood systems waste disposal, food processing, fertilizers manufacturing, IPPU (Emissions from industrial processes and product use), manure applied to soils, manure management, fires in organic soils, fires in humid tropical forests, on-farm energy use, rural population, total population, total population - male, total population - female and total emission.</p>
+<p>From these variables, I choose pesticides manufacturing, food transport, food retail, food packaging, food processing, IPPU and total emission.</p></li>
+<li><p>How many records/rows/participants?</p>
+<p>There were 236 unique geographical records and areas.</p></li>
 <li><p>Any other relevant information</p>
-<ul>
-<li>DATA IS RECORDED IN KILOTONES (kt) 1 kt = 1000 kg</li>
-</ul></li>
+<p>Emissions are recorded in Kilotons (kt) 1 kt = 1000 kg</p>
+<p>Added a decade variable to see if there is any correlation between the emissions and the years that the data was recorded.</p></li>
 </ul></li>
 <li><p>Tools</p>
 <ul>
 <li><p>R and RStudio in Posit.Cloud</p></li>
 <li><p>GitHub</p></li>
-</ul>
-<h1 id="predictions">Predictions</h1>
-<ul>
-<li><p>How, specifically, will you assess your question(s)? Take your general questions and rephrase them based on the variables in your dataset (<em>e.g.</em> <em>I will examine the correlation between aggregated-stress scores and the subjective-well-being scale</em>).</p>
-<p>I will examine the correlation between co2 emissions and the emission contributions from three factors, pesticides, industrial processes, packaging and food retail</p></li>
-<li><p>Repeat your predictions, but with more specificity (e.g.&nbsp;<em>I predict that residents will have at least 1 point higher median score on the subjective-well being score than commuters</em>).</p></li>
-<li><p>I predict that packaging and food retail will have more co2 emissions than, pesticides</p></li>
 </ul></li>
 </ul>
 </section>
+</section>
+<section id="predictions" class="level1">
+<h1>Predictions</h1>
+<ul>
+<li><p>I will examine the correlation between the total CO<sub>2</sub> emissions an agricultral site gives off and the emissions from three factors, pesticides, industrial processes and the process to make the produce ready for retail consumption. In the factor “retail ready” emissions I will be including the emissions from, food transport, food packaging, retail, and food processing.</p></li>
+<li><p>I predict that the emissions from getting produce “retail ready” will contribute at least 50% of the total emissions produced by a specific site. I predict that many areas do use pesticides in their production and the areas that do will have 50% of their total emissions contributed from this. I predict that not many areas use industrial processes, but the areas that do have a lot of their emissions contributed from this. than, pesticides</p></li>
+</ul>
 </section>
 <section id="results" class="level1">
 <h1>Results</h1>
 <ul>
-<li><p>Code - Show the code block you are using to:</p>
-<ul>
-<li><p>Retrieve/load the data</p></li>
-<li><p>Conduct any clean up or transformations</p></li>
-<li><p>Visualize the data</p></li>
-</ul></li>
-<li><p>A key figure, well-labelled, with a clear caption, presenting the data visualization you will use to answer your research question. In most cases, you would have 1 figure per question.</p></li>
-<li><p>A simple 1-sentence conclusion. Don’t refer to your prediction – just give a clear, concise, specific conclusion from what you can observe in your figure</p></li>
-</ul>
-<p>1) As food was processed in some areas, the total emission were most likely to increase as well</p>
-<p>2) There is a slight positive correlation between the manufactured pesticides used on the farms and the total co2 emissions it contirbutes to</p>
-<p>3) there is a strong positive correlation between the industrial processes and product use emissions and the total emissions that a region develops.</p>
-</section>
-<section id="discussion" class="level1">
-<h1>Discussion</h1>
-<ul>
-<li><p>Was your hypothesis supported, undermined, or no determination?</p>
-<ul>
-<li><p>my hypothesis was supported (1), food processing emissions do contribute strongly and somewhat significantly to a region’s total co2 emissions</p>
-<p>my hypothesis was undermined , a bit,(2), pesticides do not contribute strongly to the co2 emissions that a region contributes total, it still contributes somewhat to the total emissions, but there is many regions that hardly use pesticides and their contribution is close to none, there are also some regions that pesticides contribute</p>
-<p>my hypothesis was supported (3), industrial processes and product use emissions contribute strongly to the co2 emissions that a region contributes total</p></li>
-<li><p>How have you updated your beliefs, and why?</p>
-<ul>
-<li><p>Believe in your hypothesis more?</p></li>
-<li><p>Believe in your hypothesis less?</p></li>
-<li><p>No change in your belief in your hypothesis, instead a change in your belief that the way you tried to answer the question is valid</p></li>
-</ul></li>
-</ul></li>
-</ul>
+<li><p>Code -</p>
+<p>The code I used to retrieve, clean up and transform the data:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>foodAgro <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"Agrofood_co2_emission.csv"</span>)</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>foodAgro2 <span class="ot">&lt;-</span> foodAgro <span class="sc">|&gt;</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Area) <span class="sc">|&gt;</span> </span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(Year, </span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>      Area,</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>      total_emission, </span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>      Pesticides.Manufacturing, </span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>      IPPU, Food.Transport, </span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>      Food.Retail, </span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>      Food.Processing, </span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>      Food.Packaging) <span class="sc">|&gt;</span></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">food.ready.emissions =</span> </span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>          Food.Transport </span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>        <span class="sc">+</span> Food.Retail</span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>        <span class="sc">+</span> Food.Packaging </span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>        <span class="sc">+</span> Food.Processing)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Retrieving</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>foodAgro <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"Agrofood_co2_emission.csv"</span>) </span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Cleaning </span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>foodAgro2 <span class="ot">&lt;-</span> foodAgro <span class="sc">|&gt;</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Area) <span class="sc">|&gt;</span> </span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(Year, </span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>      Area,</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>      total_emission, </span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>      Pesticides.Manufacturing, </span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>      IPPU, Food.Transport, </span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>      Food.Retail, </span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>      Food.Processing, </span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>      Food.Packaging) <span class="sc">|&gt;</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Transforming</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">retail.ready.emissions =</span> </span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>          Food.Transport </span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>        <span class="sc">+</span> Food.Retail</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>        <span class="sc">+</span> Food.Packaging </span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>        <span class="sc">+</span> Food.Processing)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning: Returning more (or less) than 1 row per `summarise()` group was deprecated in
 dplyr 1.1.0.
@@ -321,41 +298,63 @@ dplyr 1.1.0.
 <pre><code>`summarise()` has grouped output by 'Area'. You can override using the
 `.groups` argument.</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="do">###color in mapping or in points, bob leaning to point, keep all data, do not reduce, see the relationship it builds</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Transforming, adding a decade variable</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>foodAgro2<span class="sc">$</span>decade <span class="ot">&lt;-</span> <span class="st">"1990s"</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>foodAgro2[foodAgro2<span class="sc">$</span>Year <span class="sc">&gt;</span> <span class="dv">1999</span>, ]<span class="sc">$</span>decade <span class="ot">&lt;-</span> <span class="st">"2000s"</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>foodAgro2[foodAgro2<span class="sc">$</span>Year <span class="sc">&gt;</span> <span class="dv">2009</span>, ]<span class="sc">$</span>decade <span class="ot">&lt;-</span> <span class="st">"2010s"</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>foodAgro2[foodAgro2<span class="sc">$</span>Year <span class="sc">&gt;</span> <span class="dv">2019</span>, ]<span class="sc">$</span>decade <span class="ot">&lt;-</span> <span class="st">"2020s"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<h1 id="visualizing-the-data">Visualizing the data:</h1>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>foodAgro2<span class="sc">$</span>decade <span class="ot">&lt;-</span> <span class="st">"1990s"</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>foodAgro2[foodAgro2<span class="sc">$</span>Year <span class="sc">&gt;</span> <span class="dv">1999</span>, ]<span class="sc">$</span>decade <span class="ot">&lt;-</span> <span class="st">"2000s"</span></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>foodAgro2[foodAgro2<span class="sc">$</span>Year <span class="sc">&gt;</span> <span class="dv">2009</span>, ]<span class="sc">$</span>decade <span class="ot">&lt;-</span> <span class="st">"2010s"</span></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>foodAgro2[foodAgro2<span class="sc">$</span>Year <span class="sc">&gt;</span> <span class="dv">2019</span>, ]<span class="sc">$</span>decade <span class="ot">&lt;-</span> <span class="st">"2020s"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">#food ready emiss v total emiss</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> foodAgro2, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> food.ready.emissions, <span class="at">y =</span> total_emission)) <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="at">alpha =</span> .<span class="dv">5</span>, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">color =</span> decade)) <span class="sc">+</span> <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Food Processing and Transportation Emissions by Decades"</span>, <span class="at">x =</span> <span class="st">"Food Processing Emissions (kt)"</span>, <span class="at">y =</span> <span class="st">"Total Emissions (kt)"</span>) <span class="sc">+</span> <span class="fu">geom_smooth</span>(<span class="at">se =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">#food ready emiss v total emiss</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> foodAgro2, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> retail.ready.emissions, <span class="at">y =</span> total_emission)) <span class="sc">+</span> </span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> .<span class="dv">5</span>, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">color =</span> decade)) <span class="sc">+</span> </span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Food Processing and Transportation Emissions by Decades"</span>, </span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Food Processing Emissions (kt)"</span>, </span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Total Emissions (kt)"</span>) <span class="sc">+</span> </span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">se =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = "cs")'</code></pre>
 </div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="project_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="project_files/figure-html/Plot 1-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">#pests v total emiss</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> foodAgro2, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> Pesticides.Manufacturing, <span class="at">y =</span> total_emission)) <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="at">alpha =</span> .<span class="dv">5</span>, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">color =</span> decade)) <span class="sc">+</span> <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Pesticides Manufacturing Emissions by Decades"</span>, <span class="at">x =</span> <span class="st">"Pesticides Manufacturing Emissions (kt)"</span>, <span class="at">y =</span> <span class="st">"Total Emissions (kt)"</span>) <span class="sc">+</span> <span class="fu">geom_smooth</span>(<span class="at">se =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<h3 id="conclusion" class="anchored" data-anchor-id="results">Conclusion:</h3>
+<p>There is a strong relationship between the emissions in food processing and the total emissions given from an agricultural area. Food processing contributes about 20% of the total emissions for a given region.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Pesticides vs Total Emissions</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> foodAgro2, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> Pesticides.Manufacturing, <span class="at">y =</span> total_emission)) <span class="sc">+</span> </span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> .<span class="dv">5</span>, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">color =</span> decade)) <span class="sc">+</span> </span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Pesticides Manufacturing Emissions by Decades"</span>, </span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Pesticides Manufacturing Emissions (kt)"</span>, </span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Total Emissions (kt)"</span>) <span class="sc">+</span> </span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">se =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = "cs")'</code></pre>
 </div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="project_files/figure-html/unnamed-chunk-2-2.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="project_files/figure-html/Plot 2-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ippu (Emissions from industrial processes and product use) v total emiss</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> foodAgro2, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> IPPU, <span class="at">y =</span> total_emission)) <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="at">alpha =</span> .<span class="dv">5</span>, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">color =</span> decade)) <span class="sc">+</span><span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Industrial Processes and Product Use Emissions by Decades"</span>, <span class="at">x =</span> <span class="st">"Industrial Processes and Product Use Emissions (kt)"</span>, <span class="at">y =</span> <span class="st">"Total Emissions (kt)"</span>) <span class="sc">+</span> <span class="fu">geom_smooth</span>(<span class="at">se =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<h3 id="conclusion-1" class="anchored">Conclusion:</h3>
+<p>In pesticide manufacturing, there is not a very strong relationship between pesticides and the CO<sub>2</sub> emitted from a particular region. Less than one percent of the emissions from pesticides manufacturing contributes to the total emissions from a particular region.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># IPPU (Emissions from industrial processes and product use) v total emiss</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> foodAgro2, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> IPPU, <span class="at">y =</span> total_emission)) <span class="sc">+</span> </span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> .<span class="dv">5</span>, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">color =</span> decade)) <span class="sc">+</span> </span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Industrial Processes and Product Use Emissions by Decades"</span>, </span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>        <span class="at">x =</span> <span class="st">"Industrial Processes and Product Use Emissions (kt)"</span>, </span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>        <span class="at">y =</span> <span class="st">"Total Emissions (kt)"</span>) <span class="sc">+</span> </span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">se =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = "cs")'</code></pre>
 </div>
@@ -370,11 +369,35 @@ dplyr 1.1.0.
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="project_files/figure-html/unnamed-chunk-2-3.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="project_files/figure-html/Plot 3-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
 </div>
+<h3 id="conclusion-2" class="anchored">Conclusion:</h3>
+<p>There is a very strong correlation between the industrial processes and product use emissions and total emissions that a region emits. Almost half the total emissions from a agricultural site, is contributed by the industrial processes and the product use emissions.</p></li>
+</ul>
+</section>
+<section id="discussion" class="level1">
+<h1>Discussion</h1>
+<ul>
+<li><p>Was your hypothesis supported, undermined, or no determination?</p>
+<p>My first hypothesis was supported, food processing emissions do contribute strongly and somewhat significantly to a region’s total CO<sub>2</sub> emissions. Much of the data set were in fact grouped in the little to no emissions contributed. I did have data from many regions of the world including 1st or 3rd world regions. Many regions do not completely process their food in industrial factories or warehouses. The areas that do process their food, about 20% of their total emissions are contributed from the processing emissions.</p>
+<p>My second hypothesis was undermined, pesticides manufacturing emissions do not contribute significantly to the total emissions of a given area. It is import to look at the axes that the plot gave. Many of the points are scattered around the graph, not showing any strong correlation between the two factors. On top of that, There are many countries who use little to no pesticides, giving little to no emissions. The areas and regions who do use pesticides, the pesticides only make less than one percent of the total emissions for that region.</p>
+<p>My third hypothesis was</p></li>
+<li><p>my hypothesis was supported (3), industrial processes and product use emissions contribute strongly to the co2 emissions that a region contributes total</p>
+<ul>
+<li><p>My beliefs have been updated.</p>
+<ul>
+<li><p>How have you updated your beliefs, and why?</p>
+<ul>
+<li><p>Believe in your hypothesis more?</p></li>
+<li><p>Believe in your hypothesis less?</p></li>
+<li><p>No change in your belief in your hypothesis, instead a change in your belief that the way you tried to answer the question is valid</p></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
 
 
 </section>

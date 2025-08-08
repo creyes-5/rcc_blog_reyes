@@ -69,11 +69,11 @@ library(tidyverse)
 
     -   GitHub
 
-    # Predictions
+# Predictions
 
-    I will examine the correlation between the total CO~2~ emissions an agricultral site gives off and the emissions from three factors, pesticides, industrial processes and the process to make the produce ready for retail consumption. In the factor "retail ready" emissions I will be including the emissions from, food transport, food packaging, retail, and food processing.
+-   I will examine the correlation between the total CO~2~ emissions an agricultral site gives off and the emissions from three factors, pesticides, industrial processes and the process to make the produce ready for retail consumption. In the factor "retail ready" emissions I will be including the emissions from, food transport, food packaging, retail, and food processing.
 
-    I predict that the emissions from getting produce "retail ready" will contribute at least 50% of the total emissions produced by a specific site. I predict that many areas do use pesticides in their production and the areas that do will have 50% of their total emissions contributed from this. I predict that not many areas use industrial processes, but the areas that do have a lot of their emissions contributed from this. than, pesticides
+-   I predict that the emissions from getting produce "retail ready" will contribute at least 50% of the total emissions produced by a specific site. I predict that many areas do use pesticides in their production and the areas that do will have 50% of their total emissions contributed from this. I predict that not many areas use industrial processes, but the areas that do have a lot of their emissions contributed from this. than, pesticides
 
 # Results
 
@@ -112,7 +112,7 @@ library(tidyverse)
     foodAgro2[foodAgro2$Year > 2019, ]$decade <- "2020s"
     ```
 
-    ### Visualizing the data:
+    # Visualizing the data:
 
     ```{r}
     #| label: Plot 1
@@ -127,9 +127,9 @@ library(tidyverse)
 
     ```
 
-    Conclusion:
+    ### Conclusion:
 
-    There is a very strong relationship between the emissions in food processing and the total emissions given from an agricultural area. Food processing contributes about 50% of the total emissions for a given region.
+    There is a strong relationship between the emissions in food processing and the total emissions given from an agricultural area. Food processing contributes about 20% of the total emissions for a given region.
 
     ```{r}
     #| label: Plot 2
@@ -144,7 +144,7 @@ library(tidyverse)
 
     ```
 
-    Conclusion:
+    ### Conclusion:
 
     In pesticide manufacturing, there is not a very strong relationship between pesticides and the CO~2~ emitted from a particular region. Less than one percent of the emissions from pesticides manufacturing contributes to the total emissions from a particular region.
 
@@ -161,7 +161,7 @@ library(tidyverse)
 
     ```
 
-    Conclusion:
+    ### Conclusion:
 
     There is a very strong correlation between the industrial processes and product use emissions and total emissions that a region emits. Almost half the total emissions from a agricultural site, is contributed by the industrial processes and the product use emissions.
 
@@ -169,16 +169,8 @@ library(tidyverse)
 
 -   Was your hypothesis supported, undermined, or no determination?
 
-    -   my hypothesis was supported (1), food processing emissions do contribute strongly and somewhat significantly to a region's total co2 emissions
+    My first hypothesis was supported, food processing emissions do contribute strongly and somewhat significantly to a region's total CO~2~ emissions. Much of the data set were in fact grouped in the little to no emissions contributed. I did have data from many regions of the world including 1st or 3rd world regions. Many regions do not completely process their food in industrial factories or warehouses. The areas that do process their food, about 20% of their total emissions are contributed from the processing emissions.
 
-        my hypothesis was undermined , a bit,(2), pesticides do not contribute strongly to the co2 emissions that a region contributes total, it still contributes somewhat to the total emissions, but there is many regions that hardly use pesticides and their contribution is close to none, there are also some regions that pesticides contribute
+    My second hypothesis was undermined, pesticides manufacturing emissions do not contribute significantly to the total emissions of a given area. It is import to look at the axes that the plot gave. Many of the points are scattered around the graph, not showing any strong correlation between the two factors. On top of that, There are many countries who use little to no pesticides, giving little to no emissions. The areas and regions who do use pesticides, the pesticides only make less than one percent of the total emissions for that region.
 
-        my hypothesis was supported (3), industrial processes and product use emissions contribute strongly to the co2 emissions that a region contributes total
-
-    -   How have you updated your beliefs, and why?
-
-        -   Believe in your hypothesis more?
-
-        -   Believe in your hypothesis less?
-
-        -   No change in your belief in your hypothesis, instead a change in your belief that the way you tried to answer the question is valid
+    My third hypothesis was supported, industrial processes and product use contribute about half the total emissions from a particular region. Now there are many more points who emit CO~2~ emissions related to the industrial processes and product use. These "retail-ready" produce must undergo various packaging, washing, transportation and disposing processes to deliver the best produce to the retail stores.

@@ -112,10 +112,9 @@ library(tidyverse)
     foodAgro2[foodAgro2$Year > 2019, ]$decade <- "2020s"
     ```
 
-    ### Visualizing the data:
+    The code I used to visualize the data:
 
     ```{r}
-    #| label: Plot 1
 
     #food ready emiss v total emiss
     ggplot(data = foodAgro2, mapping = aes(x = retail.ready.emissions, y = total_emission)) + 
@@ -125,15 +124,12 @@ library(tidyverse)
            y = "Total Emissions (kt)") + 
       geom_smooth(se = FALSE)
 
+
+
+
     ```
 
-    Conclusion:
-
-    There is a very strong relationship between the emissions in food processing and the total emissions given from an agricultural area. Food processing contributes about 50% of the total emissions for a given region.
-
     ```{r}
-    #| label: Plot 2
-
     # Pesticides vs Total Emissions
     ggplot(data = foodAgro2, mapping = aes(x = Pesticides.Manufacturing, y = total_emission)) + 
       geom_point(alpha = .5, mapping = aes(color = decade)) + 
@@ -142,15 +138,11 @@ library(tidyverse)
            y = "Total Emissions (kt)") + 
       geom_smooth(se = FALSE)
 
+
+
     ```
 
-    Conclusion:
-
-    In pesticide manufacturing, there is not a very strong relationship between pesticides and the CO~2~ emitted from a particular region. Less than one percent of the emissions from pesticides manufacturing contributes to the total emissions from a particular region.
-
     ```{r}
-    #| label: Plot 3
-
     # IPPU (Emissions from industrial processes and product use) v total emiss
     ggplot(data = foodAgro2, mapping = aes(x = IPPU, y = total_emission)) + 
       geom_point(alpha = .5, mapping = aes(color = decade)) + 
@@ -159,11 +151,20 @@ library(tidyverse)
             y = "Total Emissions (kt)") + 
       geom_smooth(se = FALSE)
 
+
     ```
 
-    Conclusion:
+-   
 
-    There is a very strong correlation between the industrial processes and product use emissions and total emissions that a region emits. Almost half the total emissions from a agricultural site, is contributed by the industrial processes and the product use emissions.
+-   A key figure, well-labelled, with a clear caption, presenting the data visualization you will use to answer your research question. In most cases, you would have 1 figure per question.
+
+-   A simple 1-sentence conclusion. Don’t refer to your prediction – just give a clear, concise, specific conclusion from what you can observe in your figure
+
+1\) As food was processed in some areas, the total emission were most likely to increase as well
+
+2\) There is a slight positive correlation between the manufactured pesticides used on the farms and the total co2 emissions it contirbutes to
+
+3\) there is a strong positive correlation between the industrial processes and product use emissions and the total emissions that a region develops.
 
 # Discussion
 
@@ -182,3 +183,7 @@ library(tidyverse)
         -   Believe in your hypothesis less?
 
         -   No change in your belief in your hypothesis, instead a change in your belief that the way you tried to answer the question is valid
+
+```{r}
+```
+
